@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./partials/head'); %>
+  </head>
+  <body>
+    <main class="page-main">
+      <div class="container">
+        <div class="row content">
+          <div class="col-sm-3 sidenav list-user">
+            <h4>Users</h4>
+            <ul class="list-user-join">
+              <li class="item-user">
+                <span
+                  ><img
+                    src="https://pdp.edu.vn/wp-content/uploads/2021/05/hinh-anh-avatar-de-thuong-750x600.jpg"
+                    class="img-circle"
+                    alt="Cinque Terre"
+                    width="50"
+                    height="50"
+                  />
+                  <b>User 1</b>
+                </span>
+              </li>
+              <li class="item-user">
+                <span
+                  ><img
+                    src="https://pdp.edu.vn/wp-content/uploads/2021/05/hinh-anh-avatar-de-thuong-750x600.jpg"
+                    class="img-circle"
+                    alt="Cinque Terre"
+                    width="50"
+                    height="50"
+                  />
+                  <b>User 2</b></span
+                >
+              </li>
+              <li class="item-user">
+                <span
+                  ><img
+                    src="https://pdp.edu.vn/wp-content/uploads/2021/05/hinh-anh-avatar-de-thuong-750x600.jpg"
+                    class="img-circle"
+                    alt="Cinque Terre"
+                    width="50"
+                    height="50"
+                  />
+                  <b>User 2</b></span
+                >
+              </li>
+              <li class="item-user">
+                <span
+                  ><img
+                    src="https://pdp.edu.vn/wp-content/uploads/2021/05/hinh-anh-avatar-de-thuong-750x600.jpg"
+                    class="img-circle"
+                    alt="Cinque Terre"
+                    width="50"
+                    height="50"
+                  />
+                  <b>User 2</b></span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-sm-9">
+            <h4>Draw</h4>
+            <div class="row">
+              <div class="col-3">
+                <div class="colors">
+                  <button type="button" value="#0000ff"></button>
+                  <button type="button" value="#009fff"></button>
+                  <button type="button" value="#0fffff"></button>
+                  <button type="button" value="#bfffff"></button>
+                  <button type="button" value="#000000"></button>
+                  <button type="button" value="#333333"></button>
+                  <button type="button" value="#666666"></button>
+                  <button type="button" value="#999999"></button>
+                  <button type="button" value="#ffcc66"></button>
+                  <button type="button" value="#ffcc00"></button>
+                  <button type="button" value="#ffff00"></button>
+                  <button type="button" value="#ffff99"></button>
+                  <button type="button" value="#003300"></button>
+                  <button type="button" value="#555000"></button>
+                  <button type="button" value="#00ff00"></button>
+                  <button type="button" value="#99ff99"></button>
+                  <button type="button" value="#f00000"></button>
+                  <button type="button" value="#ff6600"></button>
+                  <button type="button" value="#ff9933"></button>
+                  <button type="button" value="#f5deb3"></button>
+                  <button type="button" value="#330000"></button>
+                  <button type="button" value="#663300"></button>
+                  <button type="button" value="#cc6600"></button>
+                  <button type="button" value="#deb887"></button>
+                  <button type="button" value="#aa0fff"></button>
+                  <button type="button" value="#cc66cc"></button>
+                  <button type="button" value="#ff66ff"></button>
+                  <button type="button" value="#ff99ff"></button>
+                  <button type="button" value="#e8c4e8"></button>
+                  <button type="button" value="#ffffff"></button>
+                </div>
+                <div class="brushes">
+                  <button type="button" value="1"></button>
+                  <button type="button" value="2"></button>
+                  <button type="button" value="3"></button>
+                  <button type="button" value="4"></button>
+                  <button type="button" value="5"></button>
+                </div>
+                <div class="buttons">
+                  <button
+                    id="clear"
+                    type="button"
+                    class="btn-clear btn btn-warning"
+                  >
+                    Clear
+                  </button>
+                </div>
+              </div>
+              <div class="col-8 wrap-canvas" style="background-color: #fff">
+                <canvas id="paint-canvas" width="640" height="400"></canvas>
+              </div>
+            </div>
+            <div class="row" style="margin-left: 200px; margin-top: 20px">
+              <div class="col-6 box-answer">
+                <ul class="list-chat-answer">
+                  <li>User 1 : Anwser</li>
+                  <li>User 1 : Anwser</li>
+                  <li>User 1 : Anwser</li>
+                  <li>User 1 : Anwser</li>
+                </ul>
+                <form>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      placeholder="Anwser"
+                    />
+                  </div>
+                </form>
+              </div>
+              <div class="col-5 box-chat">
+                <ul class="list-chat-answer">
+                  <li>User 1 :Hello</li>
+                  <li>User 1 :Hello</li>
+                  <li>User 1 :Hello</li>
+                  <li>User 1 :Hello</li>
+                </ul>
+                <form>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      placeholder="Chat Mess..."
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer><%- include('./partials/footer'); %></footer>
+  </body>
+</html>
+<%- include('./partials/handle-js.ejs'); %>

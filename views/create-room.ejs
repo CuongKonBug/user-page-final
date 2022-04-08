@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./partials/head'); %>
+  </head>
+  <body>
+    <main class="page-main">
+      <div class="container">
+        <form>
+          <div class="row content">
+            <div class="col-sm-3 sidenav create-room">
+              <h4>1.Cấu Hình</h4>
+              <ul class="list-setup">
+                <li class="setup-item">
+                  <i class="fa-solid fa-user-check"><span> Người Chơi</span></i>
+                  <div class="input-right">
+                    <select>
+                      <option value="5">5</option>
+                      <option value="10">10</option>
+                      <option value="15">15</option>
+                      <option value="5" selected>5</option>
+                    </select>
+                  </div>
+                </li>
+                <li class="setup-item">
+                  <i class="fa-solid fa-user-check"
+                    ><span> P. công khai</span></i
+                  >
+                  <div class="input-right">
+                    <label class="switch">
+                      <input type="checkbox" checked />
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </li>
+                <li class="setup-item">
+                  <i class="fa-solid fa-user-check"><span>Ngôn Ngữ</span></i>
+                  <div class="input-right">
+                    <select>
+                      <option value="EngLish">Eng</option>
+                      <option value="VietNamese">VN</option>
+                    </select>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-sm-9">
+              <h4>2.Chủ Đề</h4>
+              <div class="box">
+                <div class="box-item">
+                  <img
+                    src="https://play-lh.googleusercontent.com/o1xjpaWAF3bUEcPeyINNzAF3D6VuOJZh5_BXB-cuLTxcDIinPO06L1dyAz7-G68W"
+                  />
+                  <br />
+                  <h5>Name Topic</h5>
+                </div>
+                <div class="box-item">
+                  <img
+                    src="https://play-lh.googleusercontent.com/o1xjpaWAF3bUEcPeyINNzAF3D6VuOJZh5_BXB-cuLTxcDIinPO06L1dyAz7-G68W"
+                  />
+                  <br />
+                  <h5>Name Topic</h5>
+                </div>
+                <div class="box-item">
+                  <img
+                    src="https://play-lh.googleusercontent.com/o1xjpaWAF3bUEcPeyINNzAF3D6VuOJZh5_BXB-cuLTxcDIinPO06L1dyAz7-G68W"
+                  />
+                  <br />
+                  <h5>Name Topic</h5>
+                </div>
+              </div>
+              <button type="button" class="btn btn-success btn-create-room">
+                Tạo Phòng Mới
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer><%- include('./partials/footer'); %></footer>
+  </body>
+</html>
+<%- include('./partials/handle-js.ejs'); %>

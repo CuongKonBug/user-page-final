@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./partials/head'); %>
+  </head>
+  <body>
+    <main class="page-main start-page">
+      <div class="container wrap-container-index">
+        <img src="https://gartic.io/static/images/new/gartic.svg" />
+        <div class="row row-wrap-index">
+          <div class="col-sm-5" style="background-color: green">
+            <img
+              src="https://gartic.io/static/images/new/title.png"
+              class="img-banner"
+            />
+            <h5 class="title-banner">Chơi Ngay</h5>
+            <img
+              src="https://pdp.edu.vn/wp-content/uploads/2021/05/hinh-anh-avatar-de-thuong-750x600.jpg"
+              class="img-index"
+              alt="Cinque Terre"
+              width="100"
+              height="100"
+            />
+            <br />
+            <i class="fa-solid fa-user-check name-index"
+              ><span style="color: #fff"> Biệt Danh</span><br />
+              <input type="text" class="form-control" style="width: 150px" />
+            </i>
+
+            <div class="row list-btn-room">
+              <div class="col-4">
+                <button type="button" class="btn btn-warning rounded-pill">
+                  <a href="/create-room">Tạo Phòng</a>
+                </button>
+              </div>
+              <div class="col-4">
+                <button type="button" class="btn btn-warning">
+                  <a href="/list-room"> Phòng</a>
+                </button>
+              </div>
+              <div class="col-4">
+                <button type="button" class="btn btn-success">
+                  <a href="/home">Chơi</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-5" style="background-color: #fff">
+            <img
+              src="https://gartic.io/static/images/new/title.png"
+              class="img-banner"
+            />
+            <h5 class="title-banner-login">Đăng Nhập Tại Đây</h5>
+            <ul class="list-login">
+              <li class="login-item">
+                <a href="./login.html">
+                  <div class="google-btn">
+                    <div class="google-icon-wrapper">
+                      <img
+                        class="google-icon"
+                        src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+                      />
+                    </div>
+                    <p class="btn-text"><b>Sign in with google</b></p>
+                  </div>
+                </a>
+              </li>
+              <li class="login-item">
+                <a href="./login.html">
+                  <div class="google-btn">
+                    <div class="google-icon-wrapper">
+                      <img
+                        class="google-icon"
+                        src="https://brandlogos.net/wp-content/uploads/2016/11/twitter-icon-circle-blue-logo-preview-400x400.png"
+                      />
+                    </div>
+                    <p class="btn-text"><b>Sign in with twitter</b></p>
+                  </div>
+                </a>
+              </li>
+              <li class="login-item">
+                <a href="./login.html">
+                  <div class="google-btn">
+                    <div class="google-icon-wrapper">
+                      <img
+                        class="google-icon"
+                        src="https://png.pngtree.com/png-vector/20191009/ourmid/pngtree-user-icon-png-image_1796659.jpg"
+                      />
+                    </div>
+                    <p class="btn-text"><b>Sign in username</b></p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer><%- include('./partials/footer'); %></footer>
+  </body>
+</html>
+<script
+  src="https://kit.fontawesome.com/26bfa5fbae.js"
+  crossorigin="anonymous"
+></script>
